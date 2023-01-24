@@ -1,0 +1,322 @@
+/* Import Fonts */
+@font-face {
+    font-family: "Kardust";
+    src: url('../assets/fonts/Kardust_TS_Condensed_Bold_Italic.ttf') format("truetype");
+}
+
+/* Colors */
+:root {
+    --custom-primary: #922fd9;
+    --custom-secondary: #1a0826;
+}
+
+/* General styles*/
+#body {
+    font-size: 20px;
+    overflow: hidden;
+}
+
+#body img {
+    width: 100%;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.title-content {
+    margin-bottom: 2rem;
+}
+
+.title-content .title-1 h2 {
+    font-family: "Kardust";
+    font-size: 48px;
+}
+
+.custom-w-75 {
+    width: 75%;
+}
+
+/* First Section*/
+.first-section {
+    background: url("../assets/images/Lading\ Mia\ wixx-03.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.first-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.first-section .logo-content {
+    margin-bottom: 5rem;
+    width: 350px;
+}
+
+.first-section .video-content,
+.first-section .video-content video {
+    width: 100%;
+}
+
+.first-section .video-content video {
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.first-section .card-section {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.first-section .card-section.desktop-view {
+    display: block;
+}
+
+.first-section .card-section.mobile-view {
+    display: none;
+}
+
+.first-section .card-section .custom-card-body {
+    display: flex;
+}
+
+.first-section .card-section .custom-card-body .custom-card-item {
+    align-items: center;
+    background-color: var(--custom-primary);
+    border-radius: 75px;
+    display: flex;
+    margin: 0 3%;
+    padding: 0 1rem;
+    width: 44%;
+}
+
+.first-section .card-section .custom-card-body .custom-card-item .custom-card-image {
+    margin-right: 10px;
+    width: 75px;
+}
+
+.first-section .card-section .custom-card-body .custom-card-item .custom-card-text {
+    width: calc(100% - 85px);
+}
+
+.first-section .card-section .custom-card-body .custom-card-item .custom-card-text p {
+    color: var(--bs-white);
+    font-family: "Kardust";
+    font-size: 28px;
+    margin: 0;
+}
+
+.first-section .imagen-absolute {
+    bottom: 0px;
+    max-width: 800px;
+    position: absolute;
+    right: 5px;
+    width: 40%;
+    z-index: 0;
+}
+
+.first-section .social-section {
+    background: linear-gradient(180deg, var(--custom-secondary), var(--custom-primary));
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    left: 0;
+    padding: 1.5rem 1rem;
+    padding-left: 1.5rem;
+    position: absolute;
+    top: calc(50% - 80.17px);
+    z-index: 2;
+}
+
+.first-section .social-section .social-body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-section .social-section .social-body .social-item {
+    margin-bottom: 1rem;
+    width: 25px;
+}
+
+.first-section .social-section .social-body .social-item:last-child {
+    margin-bottom: 0;
+}
+
+.first-section .social-section .social-body .social-item a {
+    display: block;
+}
+
+.first-section .social-section .social-body .social-item a:hover {
+    animation: rotateIcon 0.7s ease;
+}
+
+/* Second Section */
+.second-section {
+    background-color: var(--custom-secondary);
+    color: var(--bs-white);
+    padding: 4rem 0;
+    position: relative;
+}
+
+.second-section .image-content.mobile-view {
+    display: none;
+}
+
+/* footer */
+footer {
+    background-color: var(--custom-primary);
+    color: var(--bs-white);
+    font-size: 20px;
+    padding: 1.5rem 0;
+}
+
+footer .custom-footer-container {
+    text-align: center;
+}
+
+footer .custom-footer-container p {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+footer .custom-footer-container a {
+    color: var(--bs-white);
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+}
+
+footer .custom-footer-container a::before {
+    background-color: var(--bs-white);
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 0;
+}
+
+footer .custom-footer-container a:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+footer .social-section.mobile-view {
+    margin-bottom: 1rem;
+    display: none;
+}
+
+footer .social-section .social-body .social-item a {
+    display: block;
+}
+
+footer .social-section .social-body .social-item a:hover {
+    animation: rotateIcon 0.7s ease;
+}
+
+/* Responsive */
+@media only screen and ( max-width: 1199px ) {
+    .first-section .card-section .custom-card-body .custom-card-item .custom-card-image {
+        width: 50px;
+    }
+
+    .first-section .card-section .custom-card-body .custom-card-item .custom-card-text {
+        width: calc(100% - 60px);
+    }
+
+    .first-section .card-section .custom-card-body .custom-card-item .custom-card-text p {
+        font-size: 24px;
+    }
+}
+
+@media only screen and ( max-width: 991px ) {
+    .first-section .social-section,
+    .first-section .imagen-absolute,
+    .first-section .card-section.desktop-view  {
+        display: none;
+    }
+
+    .first-section .card-section.mobile-view {
+        display: block;
+    }
+
+    .first-section .card-section .custom-card-body .custom-card-item {
+        height: 60px;
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .second-section .image-content.mobile-view {
+        display: block;
+    }
+
+    footer .social-section.mobile-view {
+        display: block;
+    }
+
+    footer .social-section .social-body {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    footer .social-section .social-body .social-item {
+        width: 35px;
+    }
+
+    footer .social-section .social-body .social-item img {
+        width: 100%;
+    }
+
+    .custom-w-75 {
+        width: 100%;
+    }
+
+    #body,
+    footer {
+        font-size: 18px;
+    }
+}
+
+@media only screen and ( max-width: 575px ) {
+    .container {
+        padding: 0 2rem !important;
+    }
+    #body,
+    footer {
+        font-size: 16px;
+    }
+
+    .first-section .logo-content {
+        width: 275px;
+    }
+
+    .title-content .title-1 h2 {
+        font-size: 40px;
+    }
+}
+
+/* Animations */
+@keyframes rotateIcon {
+    0% {
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform: rotateY(90deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    75% {
+        transform: rotateY(90deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
